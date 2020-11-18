@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AWS Serverless Function
+
+Resources:
+  APIHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: java11
+      CodeUri: build/libs/func-0.1-all.jar
+      Handler: example.micronaut.BookRequestHandler
+      MemorySize: 512
+      Timeout: 60

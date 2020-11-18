@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: app
+
+stuff:
+  thing: awesome

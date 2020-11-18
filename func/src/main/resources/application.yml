@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: func
+
+stuff:
+  thing: awesome
